@@ -8,6 +8,7 @@ import (
 )
 
 func TestToBytes(t *testing.T) {
+	// testing
 	codes, err := ToBytes("ctrl-a,a")
 	assert.NilError(t, err)
 	assert.Check(t, is.DeepEqual([]byte{1, 97}, codes))
